@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ecodeem / Notifications</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Custom Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/css/editor.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/w3.js"></script>
+  </head>
+  <body class="dashboard">
+  	        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+
+				 <div w3-include-html="sidebar.html"></div> 
+
+				 <script>
+				w3.includeHTML();
+				</script> 
+			</nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+               <div class="container-fluid">
+                    	<div class="col-md-3">
+                      <h3 class="title">Notifications</span></h3>
+                    </div>
+                    <div class="col-md-5">
+                		<div id="custom-search-input">
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control input-lg" placeholder="Search Ecodeem" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" type="button">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">                   		
+                      <div class="pull-right">
+                        <a href="#" class="btn btn-success btn-new text-uppercase"> <i class="fa fa-shopping-basket"></i> Trade Waste</a>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                  	<div class="col-md-9">
+                    		<!-- <div class="no-forms">
+                            	<i class="fa fa-file-text-o"></i>
+                             <h3>No forms yet</h3>
+                          </div> -->
+                          <div class="col-md-12">
+								<!-- Page Navigation -->
+                                <div class="page-navigation">
+                                    <ul class="nav nav-tabs">
+                                      <li role="presentation"><a href="dashboard.html"><i class="fa fa-home"></i> Home</a></li>
+                                      <li role="presentation" class="active"><a href="notifications.html"><i class="fa fa-bell"></i> Notifications <span class="badge">4</span></a></li>
+                                      <li role="presentation"><a href="friends.html"><i class="fa fa-users"></i> Eco-Partners</a></li>
+                                      <li role="presentation"><a href="messages.html"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Notifications -->
+                                <div class="notifications">
+                                		<a href="#" class="notify-item">
+                                        <div class="col-md-1">
+                                        	<img src="assets/images/user.png" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-11">
+                                        	<p><span>David Holmes</span> mentioned you and 4 others in a post</p>
+                                        	<div class="date">2 days ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                    	<div class="col-md-1">
+                                        	<img src="assets/images/user.png" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-11">
+                                            <p><span>Emma Enoch</span> viewed your post and liked it.</p>
+                                            <div class="date">3 days ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                    	<div class="col-md-1">
+                                        	<img src="assets/images/user.png" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-11">
+                                        <p><span>Alisa John</span> commented on your post</p>
+                                        <div class="detail">"This is such an awesome post. You should give a 5mins speech at our next meetup. Send me a DM for details"</div>
+                                        <div class="date">2 hours ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                    	<div class="col-md-1">
+                                        	<img src="assets/images/user.png" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-11">
+                                        	<p><span>David Holmes</span> mentioned you and 4 others in a post</p>
+                                        	<div class="date">2 days ago</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                    	</div>
+                    <div class="col-md-3">
+                    	<div class="text-center" style="margin-top: 50px;">
+               
+                          <p><img src="assets/images/goal1-end-poverty.jpg" class="img-responsive"></p>
+                          <p><img src="assets/images/sdg.png" class="img-responsive"></p>
+                      </div>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+ <script type="text/javascript" src="assets/external/google-code-prettify/prettify.js"></script>
+<script type="text/javascript" src="assets/external/jquery.hotkeys.js"></script>
+ <script type="text/javascript" src="assets/js/bootstrap-wysiwyg.js"></script>
+<script type="text/javascript">
+	$('#editor').wysiwyg();
+</script>
+<script type="text/javascript">
+$(function () {
+   $('.panel-google-plus > .panel-footer > .input-placeholder, .panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > button[type="reset"]').on('click', function(event) {
+        var $panel = $(this).closest('.panel-google-plus');
+            $comment = $panel.find('.panel-google-plus-comment');
+            
+        $comment.find('.btn:first-child').addClass('disabled');
+        $comment.find('textarea').val('');
+        
+        $panel.toggleClass('panel-google-plus-show-comment');
+        
+        if ($panel.hasClass('panel-google-plus-show-comment')) {
+            $comment.find('textarea').focus();
+        }
+   });
+   $('.panel-google-plus-comment > .panel-google-plus-textarea > textarea').on('keyup', function(event) {
+        var $comment = $(this).closest('.panel-google-plus-comment');
+        
+        $comment.find('button[type="submit"]').addClass('disabled');
+        if ($(this).val().length >= 1) {
+            $comment.find('button[type="submit"]').removeClass('disabled');
+        }
+   });
+});
+</script>
+  </body>
+</html>

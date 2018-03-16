@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ecodeem / Edit Profile</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Custom Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/css/editor.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/w3.js"></script>
+  </head>
+  <body class="dashboard">
+  	        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+
+				 <div w3-include-html="sidebar.html"></div> 
+
+				 <script>
+				w3.includeHTML();
+				</script> 
+			</nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+               <div class="container-fluid">
+                    	<div class="col-md-3">
+                      <h3 class="title">User Profile</span></h3>
+                    </div>
+                    <div class="col-md-5">
+                		<div id="custom-search-input">
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control input-lg" placeholder="Search Ecodeem" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" type="button">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">                   		
+                      <div class="pull-right">
+                        <a href="#" class="btn btn-success btn-new text-uppercase"> <i class="fa fa-shopping-basket"></i> Trade Waste</a>
+                      </div>
+                    </div>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                  	<div class="col-md-9">
+                          <div class="col-md-12">
+
+                                <!-- Your wallet -->
+                                 <div class="row">
+                                <div class="profile-details">
+                                		<div class="col-md-4">
+                                        <div class="profile-box">
+                                        	<center>
+                                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle">
+                                            <h4>Enoch Ecodeem</h4>
+                                            <p>FCT, Abuja</p>
+                                            </center>
+                                            <div class="m20"></div>
+                                            <div class="form-group">
+                                            <h5>Change Profile Image</h5>
+                                            <hr>
+                                            <label>Upload Image</label>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <span class="btn btn-default btn-file">
+                                                        Browse… <input type="file" id="imgInp">
+                                                    </span>
+                                                </span>
+                                                <input type="text" class="form-control" readonly>
+                                            </div>
+                                            <img id='img-upload'/>
+                                        </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                    	<h3>Edit Profile</h3>
+                                        <hr>
+											<form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Email (disabled)</label>
+                                                <input class="form-control" disabled="" placeholder="Email" value="tomi@ecodeem.com" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>First Name</label>
+                                                <input class="form-control" placeholder="Company" value="Emmanuel" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Last Name</label>
+                                                <input class="form-control" placeholder="Last Name" value="Enemakwu" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input class="form-control" placeholder="Home Address" value="Plot 384, J.F. Kennedy Street" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>State</label>
+                                                <select name="states_of_nigeria" id="select" class="form-control">
+													<option>Select state</option>
+													<option selected>ABUJA FCT</option>
+													<option>ABIA</option>
+													<option>ADAMAWA</option>
+													<option>AKWA IBOM</option>
+													<option>ANAMBRA</option>
+													<option>BAUCHI</option>
+													<option>BAYELSA</option>
+													<option>BENUE</option>
+													<option>BORNO</option>
+													<option>CROSS RIVER</option>
+													<option>DELTA</option>
+													<option>EBONYI</option>
+													<option>EDO</option>
+													<option>EKITI</option>
+													<option>ENUGU</option>
+													<option>GOMBE</option>
+													<option>IMO</option>
+													<option>JIGAWA</option>
+													<option>KADUNA</option>
+													<option>KANO</option>
+													<option>KATSINA</option>
+													<option>KEBBI</option>
+													<option>KOGI</option>
+													<option>KWARA</option>
+													<option>LAGOS</option>
+													<option>NASSARAWA</option>
+													<option>NIGER</option>
+													<option>OGUN</option>
+													<option>ONDO</option>
+													<option>OSUN</option>
+													<option>OYO</option>
+													<option>PLATEAU</option>
+													<option>RIVERS</option>
+													<option>SOKOTO</option>
+													<option>TARABA</option>
+													<option>YOBE</option>
+													<option>ZAMFARA</option>
+												</select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Phone Number</label>
+                                                <input class="form-control" value="2348091234556" type="text">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>About me</label>
+                                                <textarea rows="3" class="form-control">I am a child of God, working and breathing in innovations and social development</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    	<div class="col-md-6">
+                                        	<div class="form-group">
+                                            	<label>Facebook</label>
+                                                <input class="form-control" placeholder="facebook profile link" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        	<div class="form-group">
+                                            	<label>Twitter</label>
+                                                <input class="form-control" placeholder="Twitter profile link" type="text">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-md-6">
+                                        	<div class="form-group">
+                                            	<label>LinkedIn</label>
+                                                <input class="form-control" placeholder="Linkedin profile link" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success btn-lg pull-right">Update Profile</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                                    </div>
+                                </div>
+                               <div class="m20"></div>
+                            </div>   
+                            </div>
+                    	</div><div class="col-md-3">
+                    	<div class="text-center" style="margin-top: 50px;">
+                          <p><img src="assets/images/goal1-end-poverty.jpg" class="img-responsive"></p>
+                          <p><img src="assets/images/sdg.png" class="img-responsive"></p>
+                      </div>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+</script>
+  </body>
+</html>
