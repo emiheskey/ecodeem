@@ -5,6 +5,7 @@ body.main {
 	background: url(../images/bg-main.png) no-repeat #fff;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
+	color: #999;
 }
 
 
@@ -1740,4 +1741,11 @@ table.profile-table {
 	margin: 30px auto;
 	padding: 20px;
 	overflow: hidden;
+}
+.green-header {
+	background: #DAFFF9;
+	padding: 10px;
+	line-height: 30px;
+	border: 1px solid #f9f9f9;
+	border-radius: 10px;
 }
